@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "a5003e48-2ee3-4d78-acd0-6824e9a02889",
+		"name": "VestigoApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "countLetters - YAML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\\\"cases\\\": {\\\"new\\\": \\\"+2730\\\",\\\"active\\\": 37089,\\\"critical\\\": 171,\\\"recovered\\\": 966353,\\\"1M_pop\\\": \\\"250451\\\",\\\"total\\\":1017915}}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/countLetters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"countLetters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countLetters - XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<!DOCTYPE glossary PUBLIC \"-//OASIS//DTD DocBook V3.1//EN\">\r\n <glossary><title>example glossary</title>\r\n  <GlossDiv><title>S</title>\r\n   <GlossList>\r\n    <GlossEntry ID=\"SGML\" SortAs=\"SGML\">\r\n     <GlossTerm>Standard Generalized Markup Language</GlossTerm>\r\n     <Acronym>SGML</Acronym>\r\n     <Abbrev>ISO 8879:1986</Abbrev>\r\n     <GlossDef>\r\n      <para>A meta-markup language, used to create markup\r\nlanguages such as DocBook.</para>\r\n      <GlossSeeAlso OtherTerm=\"GML\">\r\n      <GlossSeeAlso OtherTerm=\"XML\">\r\n     </GlossDef>\r\n     <GlossSee OtherTerm=\"markup\">\r\n    </GlossEntry>\r\n   </GlossList>\r\n  </GlossDiv>\r\n </glossary>",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/countLetters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"countLetters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countLetters - PlainText",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Lorem impsum dolor",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/countLetters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"countLetters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countLetters - JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\\\"menu\\\": {\r\n  \\\"id\\\": \\\"file\\\",\r\n  \\\"value\\\": \\\"File\\\",\r\n  \\\"popup\\\": {\r\n    \\\"menuitem\\\": [\r\n      {\\\"value\\\": \\\"New\\\", \\\"onclick\\\": \\\"CreateNewDoc()\\\"},\r\n      {\\\"value\\\": \\\"Open\\\", \\\"onclick\\\": \\\"OpenDoc()\\\"},\r\n      {\\\"value\\\": \\\"Close\\\", \\\"onclick\\\": \\\"CloseDoc()\\\"}\r\n    ]\r\n  }\r\n}}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/countLetters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"countLetters"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
